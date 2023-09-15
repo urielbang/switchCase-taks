@@ -57,25 +57,74 @@
 // }
 
 //4
-function userColorText() {
-  let textUser = prompt("type text"),
-    colorUser = prompt("type color"),
-    weightUser = +prompt("type weight");
+// function userColorText() {
+//   let textUser = prompt("type text"),
+//     colorUser = prompt("type color"),
+//     weightUser = +prompt("type weight");
 
-  switch (colorUser) {
-    case "yellow":
-      document.body.innerHTML += `<h2 style="color:yellow;font-size:${weightUser}px;">${textUser}</h2>`;
+//   switch (colorUser) {
+//     case "yellow":
+//       document.body.innerHTML += `<h2 style="color:yellow;font-size:${weightUser}px;">${textUser}</h2>`;
+//       break;
+//     case "blue":
+//       document.body.innerHTML += `<h2 style="color:blue;font-size:${weightUser}px;">${textUser}</h2>`;
+//       break;
+//     case "green":
+//       document.body.innerHTML += `<h2 style="color:green;font-size:${weightUser}px;">${textUser}</h2>`;
+//       break;
+//     case "red":
+//       document.body.innerHTML += `<h2 style="color:red;font-size:${weightUser}px;">${textUser}</h2>`;
+//       break;
+//     default:
+//       document.body.innerHTML += `<h2 style="color:black;">${textUser}</h2>`;
+//   }
+// }
+
+//5
+function userLocatin() {
+  let location = prompt("type left top bottom right"),
+    colorUSer = prompt("type color");
+  switch (location) {
+    case "center":
+      document.body.innerHTML += `
+        <div
+          style="
+          background-color: ${colorUSer};
+          width: 150px;
+          height: 150px;
+          border-radius: 100%;
+          position: absolute;
+          right: 50%;
+          top:50%
+        "
+        ></div>`;
       break;
-    case "blue":
-      document.body.innerHTML += `<h2 style="color:blue;font-size:${weightUser}px;">${textUser}</h2>`;
+    case "right":
+      document.body.innerHTML += `
+          <div
+            style="
+            background-color: ${colorUSer};
+            width: 150px;
+            height: 150px;
+            border-radius: 100%;
+            position: absolute;
+            right: 0%;
+            
+          "
+          ></div>`;
       break;
-    case "green":
-      document.body.innerHTML += `<h2 style="color:green;font-size:${weightUser}px;">${textUser}</h2>`;
-      break;
-    case "red":
-      document.body.innerHTML += `<h2 style="color:red;font-size:${weightUser}px;">${textUser}</h2>`;
-      break;
-    default:
-      document.body.innerHTML += `<h2 style="color:black;">${textUser}</h2>`;
+    case "bottom":
+      document.body.innerHTML += `
+            <div
+              style="
+              background-color: ${colorUSer};
+              width: 150px;
+              height: 150px;
+              border-radius: 100%;
+              position: absolute;
+              bottom: 0;
+             
+            "
+            ></div>`;
   }
 }
