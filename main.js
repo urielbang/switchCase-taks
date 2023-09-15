@@ -35,23 +35,47 @@
 // }
 
 //3
-function mathSwitch() {
-  let numUser1 = prompt("type num");
-  let numUser2 = prompt("type num");
-  let parameter = prompt("type +,-,*,/");
-  switch (parameter) {
-    case "+":
-      console.log(numUser1 + numUser2);
-      return;
-    case "-":
-      console.log(numUser1 - numUser2);
-      return;
-    case "*":
-      console.log(numUser1 * numUser2);
-      return;
-    case "/":
-      console.log(numUser1 / numUser2);
+// function mathSwitch() {
+//   let numUser1 = prompt("type num");
+//   let numUser2 = prompt("type num");
+//   let parameter = prompt("type +,-,*,/");
+//   switch (parameter) {
+//     case "+":
+//       console.log(numUser1 + numUser2);
+//       return;
+//     case "-":
+//       console.log(numUser1 - numUser2);
+//       return;
+//     case "*":
+//       console.log(numUser1 * numUser2);
+//       return;
+//     case "/":
+//       console.log(numUser1 / numUser2);
+//     default:
+//       console.log("insert numbers or paramet is incoorect");
+//   }
+// }
+
+//4
+function userColorText() {
+  let textUser = prompt("type text"),
+    colorUser = prompt("type color"),
+    weightUser = +prompt("type weight");
+
+  switch (colorUser) {
+    case "yellow":
+      document.body.innerHTML += `<h2 style="color:yellow;font-size:${weightUser}px;">${textUser}</h2>`;
+      break;
+    case "blue":
+      document.body.innerHTML += `<h2 style="color:blue;font-size:${weightUser}px;">${textUser}</h2>`;
+      break;
+    case "green":
+      document.body.innerHTML += `<h2 style="color:green;font-size:${weightUser}px;">${textUser}</h2>`;
+      break;
+    case "red":
+      document.body.innerHTML += `<h2 style="color:red;font-size:${weightUser}px;">${textUser}</h2>`;
+      break;
     default:
-      console.log("insert numbers or paramet is incoorect");
+      document.body.innerHTML += `<h2 style="color:black;">${textUser}</h2>`;
   }
 }
