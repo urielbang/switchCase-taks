@@ -30,6 +30,6 @@ function swithIf() {
       document.body.innerHTML += `${name.toLowerCase()}`;
       break;
     default:
-      console.log("no mesagess");
+      document.body.innerHTML += `no messages`;
   }
 }
