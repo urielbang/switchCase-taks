@@ -17,19 +17,41 @@
 // }
 
 //2
-function swithIf() {
-  let name = prompt("type name");
-  switch (name) {
-    case "jacob":
-      document.body.innerHTML += `${name}`;
-      break;
-    case "Nathan":
-      document.body.innerHTML += `${name.toUpperCase()}`;
-      break;
-    case "DALYA":
-      document.body.innerHTML += `${name.toLowerCase()}`;
-      break;
+// function swithIf() {
+//   let name = prompt("type name");
+//   switch (name) {
+//     case "jacob":
+//       document.body.innerHTML += `${name}`;
+//       break;
+//     case "Nathan":
+//       document.body.innerHTML += `${name.toUpperCase()}`;
+//       break;
+//     case "DALYA":
+//       document.body.innerHTML += `${name.toLowerCase()}`;
+//       break;
+//     default:
+//       document.body.innerHTML += `no messages`;
+//   }
+// }
+
+//3
+function mathSwitch() {
+  let numUser1 = prompt("type num");
+  let numUser2 = prompt("type num");
+  let parameter = prompt("type +,-,*,/");
+  switch (parameter) {
+    case "+":
+      console.log(numUser1 + numUser2);
+      return;
+    case "-":
+      console.log(numUser1 - numUser2);
+      return;
+    case "*":
+      console.log(numUser1 * numUser2);
+      return;
+    case "/":
+      console.log(numUser1 / numUser2);
     default:
-      document.body.innerHTML += `no messages`;
+      console.log("insert numbers or paramet is incoorect");
   }
 }
